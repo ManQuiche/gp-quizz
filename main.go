@@ -17,6 +17,7 @@ func main() {
 	//}
 
 	timeout := flag.Int("t", 30, "Quizz timeout in seconds.")
+	flag.Parse()
 
 	questions, err := csv.ReadQuestions("./problems.csv")
 	if err != nil {
